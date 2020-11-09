@@ -16,17 +16,17 @@
 
 @font-face {
    font-family: 'Fellix regular';
-   src: asset-url('Fellix-Regular.ttf') format("truetype");
+   src: url('Fellix-Regular.ttf') format("truetype");
 }
 
 @font-face {
    font-family: 'Fellix semi';
-   src: asset-url('Fellix-SemiBold.ttf') format("truetype");
+   src: url('Fellix-SemiBold.ttf') format("truetype");
 }
 
 @font-face {
    font-family: 'Fellix bold';
-   src: asset-url('Fellix-Bold.ttf') format("truetype");
+   src: url('Fellix-Bold.ttf') format("truetype");
 }
 
 body{
