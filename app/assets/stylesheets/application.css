@@ -14,19 +14,16 @@
  *= require_self
  */
 
-@font-face {
-	font-family: 'Fellix regular';
-	src: url('Fellix-Regular.ttf') format("truetype");
- }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
- @font-face {
-	font-family: 'Fellix bold';
-	src: url('Fellix-Bold.ttf') format("truetype");
- }
+/*@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;900&display=swap');*/
 
 body{
-   font-family: 'Fellix regular';
-   font-size:14px;
+	font-family: 'Poppins', sans-serif;
+	/*font-family: 'Red Hat Display', sans-serif;*/
+   font-size:13px;
+   font-weight: 400;
+   letter-spacing: -0.2px;
    margin:0;
  }
 
