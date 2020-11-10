@@ -6,6 +6,6 @@
 <br>
 
 <% @competitions.each do |compet| %>
-	• <%= compet.name %> (<%= compet.country %>)
+	<small>(<%= compet.id %>)</small> <%= compet.name %> (<%= compet.country %>)
 	<br>
 <% end %>

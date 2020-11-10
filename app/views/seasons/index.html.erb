@@ -1,0 +1,11 @@
+<br>
+<small><%= link_to "Back to welcome screen", root_path %> </small>
+<br>
+<br>
+<h3>&#x1F5D3;List of seasons</h3>
+<br>
+
+<% @seasons.each do |season| %>
+	• <%= season.competition.name %> (<%= season.startyear %>)
+	<br>
+<% end %>

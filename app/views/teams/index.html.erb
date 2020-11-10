@@ -6,7 +6,7 @@
 <br>
 
 <% @teams.each do |team| %>
-	• <%= team.club.name %> <small>(<%= team.level %>)</small>
+	<small>(<%= team.id %>)</small>  <%= team.club.name %> <small>(<%= team.level %>)</small>
 	<br>
 <% end %>
 

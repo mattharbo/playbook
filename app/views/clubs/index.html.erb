@@ -6,6 +6,6 @@
 <br>
 
 <% @clubs.each do |club| %>
-	• <%= club.name %> (<%= club.acronym %>)
+	<small>(<%= club.id %>)</small>  <%= club.name %> (<%= club.acronym %>)
 	<br>
 <% end %>
