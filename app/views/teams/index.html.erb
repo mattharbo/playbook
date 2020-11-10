@@ -1,0 +1,18 @@
+<br>
+<small><%= link_to "Back to welcome screen", root_path %> </small>
+<br>
+<br>
+<h3>&#x1F465;List of teams</h3>
+<br>
+
+<% @teams.each do |team| %>
+	• <%= team.club.name %> <small>(<%= team.level %>)</small>
+	<br>
+<% end %>
+
+
+
+
+
+
+

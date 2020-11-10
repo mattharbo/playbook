@@ -1,10 +1,11 @@
 <br>
-<h3>&#x1F5DE; List of competitions</h3>
+<small><%= link_to "Back to welcome screen", root_path %> </small>
+<br>
+<br>
+<h3>&#x1F5DE;List of competitions</h3>
 <br>
 
 <% @competitions.each do |compet| %>
-
-• <%= compet.name %> (<%= compet.country %>)
-<br>
-
+	• <%= compet.name %> (<%= compet.country %>)
+	<br>
 <% end %>
