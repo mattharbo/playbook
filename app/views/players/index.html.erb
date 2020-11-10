@@ -1,0 +1,15 @@
+<br>
+<small><%= link_to "Back to welcome screen", root_path %> </small>
+<br>
+<br>
+<h3>&#x1F9B8;List of players</h3>
+<br>
+
+<% @players.each do |player| %>
+	<small>(<%= player.id %>)</small>
+	 <%= player.forename %>
+	 <%= player.name %>
+	  <small><strong>#<%= player.shirtnumber %></strong>
+	   (<%= player.team.club.shortname %>)</small>
+	<br>
+<% end %>
