@@ -6,6 +6,6 @@
 <br>
 
 <% @seasons.each do |season| %>
-	• <%= season.competition.name %> (<%= season.startyear %>)
+	<small>(<%= season.id %>)</small>  <%= season.competition.name %> (<%= season.startyear %>)
 	<br>
 <% end %>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'fixtures/index'
   get 'players/index'
   get 'seasons/index'
   get 'team/index'
@@ -11,4 +12,5 @@ Rails.application.routes.draw do
   resources :teams, only:[:index]
   resources :seasons, only:[:index]
   resources :players, only:[:index]
+  resources :fixtures, only:[:index]
 end

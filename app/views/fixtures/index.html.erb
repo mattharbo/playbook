@@ -1,0 +1,17 @@
+<br>
+<small><%= link_to "Back to welcome screen", root_path %> </small>
+<br>
+<br>
+<h3>&#x1F3DF;List of fixtures</h3>
+<br>
+
+<% @fixtures.each do |fixture| %>
+	<small>(<%= fixture.id %>)</small>
+	 <%= fixture.hometeam.club.name %>
+	 <strong>vs.</strong>
+	 <%= fixture.awayteam.club.name %>
+	 <small>(<%= fixture.season.competition.name %>)
+	 @ <%= fixture.date %>
+	 | <%= fixture.time %></small>
+	<br>
+<% end %>
