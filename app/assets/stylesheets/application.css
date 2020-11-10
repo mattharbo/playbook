@@ -14,30 +14,18 @@
  *= require_self
  */
 
-/*
 @font-face {
-   font-family: 'Fellix regular';
-   src: url('Fellix-Regular.ttf') format("truetype");
-}
+	font-family: 'Fellix regular';
+	src: url('Fellix-Regular.ttf') format("truetype");
+ }
 
-@font-face {
-   font-family: 'Fellix semi';
-   src: url('Fellix-SemiBold.ttf') format("truetype");
-}
-
-@font-face {
-   font-family: 'Fellix bold';
-   src: url('Fellix-Bold.ttf') format("truetype");
-}*/
-
-@font-face {
-  font-family: 'Fellix semi';
-    src:
-        url('Fellix-SemiBold.ttf') format('truetype');
-}
+ @font-face {
+	font-family: 'Fellix bold';
+	src: url('Fellix-Bold.ttf') format("truetype");
+ }
 
 body{
-   font-family: 'Fellix semi';
+   font-family: 'Fellix bold';
    font-size:14px;
    margin:0;
  }
