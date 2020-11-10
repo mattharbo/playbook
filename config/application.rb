@@ -32,6 +32,6 @@ module Playbook
     # Don't generate system test files.
     config.generators.system_tests = nil
 
-    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    # config.assets.paths << Rails.root.join("app", "assets", "fonts")
   end
 end
