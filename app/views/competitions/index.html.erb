@@ -1,0 +1,10 @@
+<br>
+<h3>List of competitions:</h3>
+<br>
+
+<% @competitions.each do |compet| %>
+
+• <%= compet.name %> (<%= compet.country %>)
+<br>
+
+<% end %>
