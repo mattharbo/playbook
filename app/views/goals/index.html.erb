@@ -1,0 +1,15 @@
+<br>
+<small><%= link_to "Back to welcome screen", root_path %> </small>
+<br>
+<br>
+<h3>&#x26BD; List of goals</h3>
+<br>
+
+<% @goals.each do |goal| %>
+	<small>(<%= goal.id %>)</small>
+	Scored at <strong> <%= goal.minute %> min </strong>
+	for <strong> <%= goal.team.club.shortname %> </strong>
+	during the game <strong> <%= goal.fixture.hometeam.club.acronym %> vs. <%= goal.fixture.awayteam.club.acronym %> </strong>
+	<br>
+	
+<% end %>

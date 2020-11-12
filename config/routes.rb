@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'goals/index'
   get 'eventtypes/index'
   get 'fixtures/index'
   get 'players/index'
@@ -15,4 +16,5 @@ Rails.application.routes.draw do
   resources :players, only:[:index]
   resources :fixtures, only:[:index]
   resources :eventtypes, only:[:index]
+  resources :goals, only:[:index]
 end

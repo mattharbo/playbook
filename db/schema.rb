@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_12_153146) do
+ActiveRecord::Schema.define(version: 2020_11_12_154324) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,16 @@ ActiveRecord::Schema.define(version: 2020_11_12_153146) do
     t.index ["season_id"], name: "index_fixtures_on_season_id"
   end
 
+  create_table "goals", force: :cascade do |t|
+    t.bigint "fixture_id", null: false
+    t.bigint "team_id", null: false
+    t.string "minute"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["fixture_id"], name: "index_goals_on_fixture_id"
+    t.index ["team_id"], name: "index_goals_on_team_id"
+  end
+
   create_table "players", force: :cascade do |t|
     t.string "name"
     t.string "forename"
@@ -78,6 +88,8 @@ ActiveRecord::Schema.define(version: 2020_11_12_153146) do
   end
 
   add_foreign_key "fixtures", "seasons"
+  add_foreign_key "goals", "fixtures"
+  add_foreign_key "goals", "teams"
   add_foreign_key "players", "teams"
   add_foreign_key "seasons", "competitions"
   add_foreign_key "teams", "clubs"
