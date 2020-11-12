@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_12_154324) do
+ActiveRecord::Schema.define(version: 2020_11_12_155925) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,23 @@ ActiveRecord::Schema.define(version: 2020_11_12_154324) do
     t.index ["season_id"], name: "index_fixtures_on_season_id"
   end
 
+  create_table "goalevents", force: :cascade do |t|
+    t.bigint "goal_id", null: false
+    t.bigint "player_id", null: false
+    t.integer "assist"
+    t.float "startdepth"
+    t.float "startwidth"
+    t.float "enddepth"
+    t.float "endwidth"
+    t.bigint "eventtype_id", null: false
+    t.boolean "penalty"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["eventtype_id"], name: "index_goalevents_on_eventtype_id"
+    t.index ["goal_id"], name: "index_goalevents_on_goal_id"
+    t.index ["player_id"], name: "index_goalevents_on_player_id"
+  end
+
   create_table "goals", force: :cascade do |t|
     t.bigint "fixture_id", null: false
     t.bigint "team_id", null: false
@@ -88,6 +105,9 @@ ActiveRecord::Schema.define(version: 2020_11_12_154324) do
   end
 
   add_foreign_key "fixtures", "seasons"
+  add_foreign_key "goalevents", "eventtypes"
+  add_foreign_key "goalevents", "goals"
+  add_foreign_key "goalevents", "players"
   add_foreign_key "goals", "fixtures"
   add_foreign_key "goals", "teams"
   add_foreign_key "players", "teams"

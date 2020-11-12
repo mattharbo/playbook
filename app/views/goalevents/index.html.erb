@@ -1,0 +1,16 @@
+<br>
+<small><%= link_to "Back to welcome screen", root_path %> </small>
+<br>
+<br>
+<h3>&#x1F52B; List of goal events</h3>
+<br>
+
+<% @goalevents.each do |goalevent| %>
+
+	<small>(<%= goalevent.id %>)</small>
+	<%= goalevent.player.forename %> <strong><%= goalevent.player.name %></strong>
+	<%= goalevent.eventtype.name %>
+	<small> (assist #<%= goalevent.assist %>)</small>
+	<br>
+	
+<% end %>

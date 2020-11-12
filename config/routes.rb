@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'goalevents/index'
   get 'goals/index'
   get 'eventtypes/index'
   get 'fixtures/index'
