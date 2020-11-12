@@ -1,0 +1,12 @@
+<br>
+<small><%= link_to "Back to welcome screen", root_path %> </small>
+<br>
+<br>
+<h3>&#x1F39B; List of event types</h3>
+<br>
+
+<% @eventtypes.each do |eventtype| %>
+	<small>(<%= eventtype.id %>)</small>
+	 <%= eventtype.name %>
+	<br>
+<% end %>
