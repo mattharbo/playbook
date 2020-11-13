@@ -1,0 +1,43 @@
+<center>
+
+<br>
+
+<%= @fixture.season.competition.name %> • Stage <%= @fixture.stage %>
+<!-- | Saison <%= @fixture.season.startyear %> -->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%= @fixture.date %>
+
+<br><br>
+
+<h3>
+	<%= @fixture.hometeam.club.shortname %>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<%= @fixture.scorehome %>
+	 - 
+	<%= @fixture.scoreaway %>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<%= @fixture.awayteam.club.shortname %>
+</h3>
+
+<br>
+
+<small>
+
+	<% @goals.each do |goal| %>
+
+		<%= goal.team.club.acronym %>
+		<%= goal.minute %>'
+
+		<br>
+
+	<% end %>
+
+</small>
+
+</center>

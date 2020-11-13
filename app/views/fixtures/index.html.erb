@@ -16,5 +16,6 @@
 	 <small>(<%= fixture.season.competition.name %>)
 	 @ <%= fixture.date %>
 	 | <%= fixture.time %></small>
+	 <small><%= link_to "see game", fixture_path(fixture.id) %> </small>
 	<br>
 <% end %>
