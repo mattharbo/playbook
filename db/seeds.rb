@@ -90,43 +90,43 @@
 
 ###### Create player prod ######
 
-Player.create(forename:"Romain",name:"Hamouma",shirtnumber:"21",team:Team.find(15))
-Player.create(forename:"Denis",name:"Bouanga",shirtnumber:"20",team:Team.find(15))
-Player.create(forename:"Ismaël",name:"Traoré",shirtnumber:"8",team:Team.find(9))
-Player.create(forename:"Jonathan",name:"Bamba",shirtnumber:"7",team:Team.find(2))
-Player.create(forename:"Damien",name:"Da Silva",shirtnumber:"3",team:Team.find(3))
+# Player.create(forename:"Romain",name:"Hamouma",shirtnumber:"21",team:Team.find(15))
+# Player.create(forename:"Denis",name:"Bouanga",shirtnumber:"20",team:Team.find(15))
+# Player.create(forename:"Ismaël",name:"Traoré",shirtnumber:"8",team:Team.find(9))
+# Player.create(forename:"Jonathan",name:"Bamba",shirtnumber:"7",team:Team.find(2))
+# Player.create(forename:"Damien",name:"Da Silva",shirtnumber:"3",team:Team.find(3))
 
-# Goalevent.create(
-# 	goal:Goal.find(5),
-# 	player:Player.find(6),
-# 	assist:0,
-# 	eventtype:Eventtype.find(1)
-# )
+Goalevent.create(
+	goal:Goal.find(1),
+	player:Player.find(1),
+	assist:0,
+	eventtype:Eventtype.find(1)
+)
 
-# Goalevent.create(
-# 	goal:Goal.find(6),
-# 	player:Player.find(7),
-# 	assist:0,
-# 	eventtype:Eventtype.find(1)
-# )
+Goalevent.create(
+	goal:Goal.find(2),
+	player:Player.find(1),
+	assist:0,
+	eventtype:Eventtype.find(1)
+)
 
-# Goalevent.create(
-# 	goal:Goal.find(7),
-# 	player:Player.find(8),
-# 	assist:0,
-# 	eventtype:Eventtype.find(1)
-# )
+Goalevent.create(
+	goal:Goal.find(3),
+	player:Player.find(3),
+	assist:0,
+	eventtype:Eventtype.find(1)
+)
 
-# Goalevent.create(
-# 	goal:Goal.find(3),
-# 	player:Player.find(4),
-# 	assist:0,
-# 	eventtype:Eventtype.find(1)
-# )
+Goalevent.create(
+	goal:Goal.find(4),
+	player:Player.find(4),
+	assist:0,
+	eventtype:Eventtype.find(1)
+)
 
-# Goalevent.create(
-# 	goal:Goal.find(4),
-# 	player:Player.find(5),
-# 	assist:0,
-# 	eventtype:Eventtype.find(1)
-# )
+Goalevent.create(
+	goal:Goal.find(5),
+	player:Player.find(5),
+	assist:0,
+	eventtype:Eventtype.find(1)
+)
