@@ -7,7 +7,16 @@ class FixturesController < ApplicationController
 	end
 
 	def show
-		@goals=Goal.where(fixture:params[:id])
+		goals=Goal.where(fixture:params[:id])
+
+		@goals=[]
+
+		goals.each do |goal|
+			if Goalevent.where(goal:goal.id).take.assist="score"
+				@goals << Goalevent.where(goal:goal.id).take	
+			end
+		end
+		
 	end
 
 	private 
@@ -17,4 +26,3 @@ class FixturesController < ApplicationController
 	end
 
 end
-
