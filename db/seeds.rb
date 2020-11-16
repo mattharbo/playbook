@@ -45,9 +45,6 @@
 
 # Goal.create(fixture:Fixture.find(32),team:Team.find(11),minute:'47')
 
-###### Create players local ######
-
-# Player.create(forename:"Romain",name:"Hamouma",shirtnumber:"21",team:Team.find(17))
 
 ###### Create goalevents local ######
 
@@ -57,41 +54,6 @@
 # 	assist:0,
 # 	eventtype:Eventtype.find(1)
 # )
-
-###### Create player prod ######
-
-Player.create(forename:'Boulaye',name:'Dia',shirtnumber:'11',team:Team.find(16))
-Player.create(forename:'El Bilal',name:'Toure',shirtnumber:'27',team:Team.find(16))
-Player.create(forename:'Axel',name:'Disasi',shirtnumber:'20',team:Team.find(6))
-Player.create(forename:'Benoît',name:'Badiashile',shirtnumber:'32',team:Team.find(6))
-Player.create(forename:'Mehdi',name:'Chahiri',shirtnumber:'21',team:Team.find(19))
-Player.create(forename:'Yoane',name:'Wissa',shirtnumber:'19',team:Team.find(17))
-Player.create(forename:'Adrian',name:'Grbić',shirtnumber:'27',team:Team.find(17))
-Player.create(forename:'Pierre-Yves',name:'Hamel',shirtnumber:'29',team:Team.find(17))
-Player.create(forename:'Kevin',name:'Denkey',shirtnumber:'27',team:Team.find(18))
-Player.create(forename:'Birger',name:'Meling',shirtnumber:'3',team:Team.find(18))
-Player.create(forename:'Romain',name:'Philippoteaux',shirtnumber:'12',team:Team.find(18))
-Player.create(forename:'Moussa',name:'Koné',shirtnumber:'28',team:Team.find(18))
-Player.create(forename:'Gaël',name:'Kakuta',shirtnumber:'10',team:Team.find(11))
-Player.create(forename:'Amine',name:'Gouiri',shirtnumber:'11',team:Team.find(8))
-Player.create(forename:'Teji',name:'Savanier',shirtnumber:'11',team:Team.find(7))
-Player.create(forename:'Memphis',name:'Depay',shirtnumber:'10',team:Team.find(5))
-Player.create(forename:'Julian',name:'Draxler',shirtnumber:'23',team:Team.find(1))
-Player.create(forename:'Aurélien',name:'Scheidler',shirtnumber:'27',team:Team.find(20))
-Player.create(forename:'Damien',name:'Le Tallec',shirtnumber:'14',team:Team.find(7))
-Player.create(forename:'Edouardo',name:'Camavinga',shirtnumber:'10',team:Team.find(3))
-Player.create(forename:'Gaëtan',name:'Laborde',shirtnumber:'10',team:Team.find(7))
-Player.create(forename:'Kasper',name:'Dolberg',shirtnumber:'9',team:Team.find(8))
-Player.create(forename:'Andrei',name:'Girotto',shirtnumber:'3',team:Team.find(14))
-Player.create(forename:'Imrân',name:'Louza',shirtnumber:'26',team:Team.find(14))
-Player.create(forename:'Zinedine',name:'Ferhat',shirtnumber:'10',team:Team.find(18))
-Player.create(forename:'Josh',name:'Maja',shirtnumber:'9',team:Team.find(12))
-Player.create(forename:'Toma',name:'Bašić',shirtnumber:'26',team:Team.find(12))
-Player.create(forename:'Flaurian',name:'Thauvin',shirtnumber:'26',team:Team.find(4))
-Player.create(forename:'Duje',name:'Ćaleta-Car',shirtnumber:'15',team:Team.find(4))
-Player.create(forename:'Romain',name:'Faivre',shirtnumber:'21',team:Team.find(13))
-Player.create(forename:'Gaëtan',name:'Charbonnier',shirtnumber:'10',team:Team.find(13))
-Player.create(forename:'Igniatius',name:'Ganago',shirtnumber:'27',team:Team.find(11))
 
 # Goalevent.create(
 # 	goal:Goal.find(1),

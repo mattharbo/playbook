@@ -6,10 +6,17 @@
 <br>
 
 <% @players.each do |player| %>
-	<small>(<%= player.id %>)</small>
-	 <%= player.forename %>
-	 <%= player.name %>
-	  <small><strong>#<%= player.shirtnumber %></strong>
-	   (<%= player.team.club.shortname %>)</small>
+	<small>
+		(<%= player.id %>)
+		<strong>#<%= player.shirtnumber %></strong>
+	</small>
+	<%= player.forename %>
+	<%= player.name %>
+	<small>
+		(<%= player.team.club.shortname %>)
+		<%= player.nationality %>
+		 | 
+		<%= player.position %>
+	</small>
 	<br>
 <% end %>
