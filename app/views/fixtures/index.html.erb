@@ -21,6 +21,18 @@
 	 <%= fixture.awayteam.club.shortname %>
 	 <small>
 	 | <%= fixture.time %></small>
-	 <small><%= link_to "see game", fixture_path(fixture.id) %> </small>
+
+
+	 <% if fixture.scorehome.nil? %>
+	 	<small>
+	 		<%= link_to "update score", edit_fixture_path(fixture.id) %>
+	 	</small>
+	 <% else %>
+	 	<small>
+			<!-- <%= link_to "see game", fixture_path(fixture.id) %> -->
+			<strong>>> Future game link <<</strong>
+	 	</small>
+	 <% end %>
+
 	<br>
 <% end %>

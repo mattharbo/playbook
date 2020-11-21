@@ -1,0 +1,22 @@
+<br>
+
+<small>
+	<strong>Fixture to edit:</strong>
+</small>
+
+<br><br>
+
+<%= form_for @fixture do |f| %>
+
+	<%= f.label :scorehome, @fixture.hometeam.club.acronym %>
+	<%= f.text_field :scorehome %>
+
+	<%= f.label :scoreaway, @fixture.awayteam.club.acronym %>
+	<%= f.text_field :scoreaway %>
+
+	<br>
+	<br>
+
+	<%= f.submit 'Update the game' %>
+
+<% end %>

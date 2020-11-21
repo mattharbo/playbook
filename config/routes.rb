@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   resources :teams, only:[:index]
   resources :seasons, only:[:index]
   resources :players, only:[:index]
-  resources :fixtures, only:[:index,:show]
+  resources :fixtures, only:[:index,:show,:edit,:update]
   resources :eventtypes, only:[:index]
   resources :goals, only:[:index]
 end

@@ -9,25 +9,6 @@
 ###### Create all teams ######
 
 # Team.create(level:"Men's pro squad",club:Club.find(3))
-# Team.create(level:"Men's pro squad",club:Club.find(4))
-# Team.create(level:"Men's pro squad",club:Club.find(5))
-# Team.create(level:"Men's pro squad",club:Club.find(6))
-# Team.create(level:"Men's pro squad",club:Club.find(7))
-# Team.create(level:"Men's pro squad",club:Club.find(8))
-# Team.create(level:"Men's pro squad",club:Club.find(9))
-# Team.create(level:"Men's pro squad",club:Club.find(10))
-# Team.create(level:"Men's pro squad",club:Club.find(11))
-# Team.create(level:"Men's pro squad",club:Club.find(12))
-# Team.create(level:"Men's pro squad",club:Club.find(13))
-# Team.create(level:"Men's pro squad",club:Club.find(14))
-# Team.create(level:"Men's pro squad",club:Club.find(15))
-# Team.create(level:"Men's pro squad",club:Club.find(16))
-# Team.create(level:"Men's pro squad",club:Club.find(17))
-# Team.create(level:"Men's pro squad",club:Club.find(18))
-# Team.create(level:"Men's pro squad",club:Club.find(19))
-# Team.create(level:"Men's pro squad",club:Club.find(20))
-# Team.create(level:"Men's pro squad",club:Club.find(21))
-# Team.create(level:"Men's pro squad",club:Club.find(22))
 
 ###### Create all fixtures local ######
 
