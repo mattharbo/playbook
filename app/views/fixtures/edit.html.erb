@@ -14,6 +14,8 @@
 	<%= f.label :scoreaway, @fixture.awayteam.club.acronym %>
 	<%= f.text_field :scoreaway %>
 
+	<%= f.hidden_field :status, :value => 'played' %>
+
 	<br>
 	<br>
 
